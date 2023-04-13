@@ -45,8 +45,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemConfigs:
+  - {fileID: 11400000, guid: 7e8405247a9d24a42b453d578581d402, type: 2}
   - {fileID: 11400000, guid: e8881333bbaef9e4bb51a2db150f3590, type: 2}
   - {fileID: 11400000, guid: 2e196fe9f25549d428e7b448f566c086, type: 2}
+  - {fileID: 11400000, guid: e1b9200bf9aaa744bbce34527f09a9a7, type: 2}
+  itemViewConfigs:
+  - {fileID: 11400000, guid: c0ba76b8ea4dc2f448e4622321894653, type: 2}
+  - {fileID: 11400000, guid: 9966891e8b7b0234bab2dcdd8dc0eb80, type: 2}
+  - {fileID: 11400000, guid: b76200c62634ed543ac376902e34cbf9, type: 2}
+  - {fileID: 11400000, guid: 4f36f2b44d6ee4947a0ab3aee3a78926, type: 2}
   inventoryConfig: {fileID: 11400000, guid: 1507bd4fcde45c144bc4fa4e28b0010b, type: 2}
 --- !u!1 &8484318391204334817
 GameObject:

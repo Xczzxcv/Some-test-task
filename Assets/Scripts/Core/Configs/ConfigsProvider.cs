@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Core.Configs
 {
-internal class ConfigsProvider : MonoBehaviour, IConfigsProvider
+internal partial class ConfigsProvider : MonoBehaviour, IConfigsProvider
 {
     [SerializeField] private List<InventoryItemConfig> itemConfigs;
     [SerializeField] private List<InventoryItemViewConfig> itemViewConfigs;
@@ -38,11 +38,6 @@ internal class ConfigsProvider : MonoBehaviour, IConfigsProvider
         {
             _itemViews.Add(itemViewConfig.Id, itemViewConfig);
         }
-    }
-
-    private void Validate()
-    {
-        throw new System.NotImplementedException();
     }
 }
 }

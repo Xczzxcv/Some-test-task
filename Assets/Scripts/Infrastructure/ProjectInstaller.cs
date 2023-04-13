@@ -11,12 +11,18 @@ internal class ProjectInstaller : MonoInstaller
     public override void InstallBindings()
     {
         BindConfigsProvider();
+        BindItemsFactory();
     }
 
     private void BindConfigsProvider()
     {
         configsProvider.Init();
         Container.Bind<IConfigsProvider>().FromInstance(configsProvider).AsSingle();
+    }
+
+    private void BindItemsFactory()
+    {
+        Container.Bind<IInventoryItemFactory>().To<InventoryItemFactory>().AsSingle();
     }
 }
 }

@@ -18,5 +18,7 @@ internal abstract class InventoryItem<TConfig, TData> : IInventoryItem
         Config = config;
         Data = data;
     }
+
+    public override string ToString() => $"Inv Item '{Id}'";
 }
 }

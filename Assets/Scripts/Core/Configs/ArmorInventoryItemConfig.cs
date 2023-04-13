@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Core.Configs
 {
-[CreateAssetMenu(menuName = "Configs/Armor Inventory Item", fileName = "ArmorInventoryItemConfig", order = 0)]
+[CreateAssetMenu(menuName = "Configs/Inventory Item/Armor", fileName = "ArmorInventoryItemConfig", order = 0)]
 public class ArmorInventoryItemConfig : InventoryItemConfig
 {
     public BodyPart BodyPart;

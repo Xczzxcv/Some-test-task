@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: cap_view
   m_EditorClassIdentifier: 
   Id: cap
-  Sprite: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: a904c162665f2ca48b2bcc71ab85ce52, type: 3}

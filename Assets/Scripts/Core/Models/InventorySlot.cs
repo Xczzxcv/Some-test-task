@@ -10,9 +10,10 @@ internal class InventorySlot : IInventorySlot
     private readonly InventorySlotData _data;
     private readonly IInventoryItemFactory _inventoryItemFactory;
 
-    public InventorySlot(InventorySlotData data)
+    public InventorySlot(InventorySlotData data, IInventoryItemFactory inventoryItemFactory)
     {
         _data = data;
+        _inventoryItemFactory = inventoryItemFactory;
     }
 
     public void Init()

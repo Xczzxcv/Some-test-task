@@ -1,4 +1,3 @@
-using Core.Configs;
 using Core.Data;
 using Core.Models;
 

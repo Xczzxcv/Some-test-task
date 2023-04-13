@@ -1,8 +1,16 @@
-﻿namespace Core.Data
+﻿using System;
+using Newtonsoft.Json;
+
+namespace Core.Data
 {
-internal abstract class InventoryItemData
+[Serializable]
+internal abstract class InventoryItemData : ITypedGameData, IGameDataPiece
 {
+    public string Type { get; set; }
+
+    [JsonProperty("item_id")]
     public string ItemId;
+    [JsonProperty("amount")]
     public int Amount;
 }
 }

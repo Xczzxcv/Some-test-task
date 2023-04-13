@@ -11,6 +11,8 @@ internal interface IInventory
 
     bool TryPutInto(IInventoryItem item);
     
-    bool TryTakeAway(string itemId, out IInventoryItem item);
+    bool TryTakeAway(string itemId, int amount, out IInventoryItem item);
+    
+    int GetAmount(string itemId);
 }
 }

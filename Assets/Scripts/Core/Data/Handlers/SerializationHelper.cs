@@ -10,7 +10,7 @@ internal static class SerializationHelper
     {
         Converters = new List<JsonConverter>
         {
-            new TypedGameDataJsonConverter()
+            new InventoryItemDataJsonConverter()
         }
     };
     

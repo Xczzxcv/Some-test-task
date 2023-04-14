@@ -2,7 +2,7 @@ using System;
 
 namespace Core.Data.Handlers
 {
-internal class TypedGameDataJsonConverter : TypedGameDataJsonConverter<InventoryItemData>
+internal class InventoryItemDataJsonConverter : TypedGameDataJsonConverter<InventoryItemData>
 {
     protected override (string, Type)[] GetMapEntities()
     {

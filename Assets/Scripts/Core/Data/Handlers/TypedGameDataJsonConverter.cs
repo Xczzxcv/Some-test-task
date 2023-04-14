@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using UnityEngine;
 
 namespace Core.Data.Handlers
 {
@@ -19,6 +21,9 @@ internal abstract class TypedGameDataJsonConverter<TData> : JsonConverter<TData>
     private void FillMapDictionaries()
     {
         var mapEntities = GetMapEntities();
+        Debug.Assert(mapEntities.All(tuple => typeof(TData).IsAssignableFrom(tuple.Item2)),
+            $"All types used in map entities must be ancestors of type {typeof(TData)}");
+        
         foreach (var (str, type) in mapEntities)
         {
             _strToType.Add(str, type);

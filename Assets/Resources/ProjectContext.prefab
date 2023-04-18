@@ -46,14 +46,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemConfigs:
   - {fileID: 11400000, guid: 7e8405247a9d24a42b453d578581d402, type: 2}
+  - {fileID: 11400000, guid: a8e83fbebe484de469fb86d834e97f32, type: 2}
+  - {fileID: 11400000, guid: 6959f2658dd682e4fb32be3b71961959, type: 2}
   - {fileID: 11400000, guid: e8881333bbaef9e4bb51a2db150f3590, type: 2}
   - {fileID: 11400000, guid: 2e196fe9f25549d428e7b448f566c086, type: 2}
+  - {fileID: 11400000, guid: f91a69c943e7be548845f30a1c136ea2, type: 2}
   - {fileID: 11400000, guid: e1b9200bf9aaa744bbce34527f09a9a7, type: 2}
+  - {fileID: 11400000, guid: dc4705f3336e2284e8ac0effde339ff6, type: 2}
   itemViewConfigs:
-  - {fileID: 11400000, guid: c0ba76b8ea4dc2f448e4622321894653, type: 2}
-  - {fileID: 11400000, guid: 9966891e8b7b0234bab2dcdd8dc0eb80, type: 2}
-  - {fileID: 11400000, guid: b76200c62634ed543ac376902e34cbf9, type: 2}
-  - {fileID: 11400000, guid: 4f36f2b44d6ee4947a0ab3aee3a78926, type: 2}
+  - {fileID: 11400000, guid: ed5bcec387b585f4caacf115544160da, type: 2}
+  - {fileID: 11400000, guid: 194e3d15e0e5c314ca79e824238eb86b, type: 2}
+  - {fileID: 11400000, guid: 088b6dcb90e1dfb47880d101128c4cf7, type: 2}
+  - {fileID: 11400000, guid: 5a1d6f8782f8deb4ca0dfc793388fea1, type: 2}
+  - {fileID: 11400000, guid: 2b62e02cce5e40e4494ac1ef6fce20ba, type: 2}
+  - {fileID: 11400000, guid: b81cca53ad7d9084a82d6db0e1493711, type: 2}
+  - {fileID: 11400000, guid: 8701531af9406f944b7b3abe018babc1, type: 2}
+  - {fileID: 11400000, guid: d67472c21c1d02547bfd224ab9caf7cd, type: 2}
   inventoryConfig: {fileID: 11400000, guid: 1507bd4fcde45c144bc4fa4e28b0010b, type: 2}
 --- !u!1 &8484318391204334817
 GameObject:

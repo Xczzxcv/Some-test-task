@@ -9,10 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69903b97429f4b359bc84d9a3f147971, type: 3}
-  m_Name: ammo1
+  m_Script: {fileID: 11500000, guid: 631f565e03b043a9af2e08bfe93e31a9, type: 3}
+  m_Name: rifle
   m_EditorClassIdentifier: 
-  Id: ammo1
-  Weight: 0.01
-  MaxStackAmount: 30
-  ConsumableType: 1
+  Id: rifle
+  Weight: 5
+  MaxStackAmount: 3
+  DamageAmount: 20
+  BulletsPerShot: 1
+  ProjectileItemConfig: {fileID: 11400000, guid: a8e83fbebe484de469fb86d834e97f32, type: 2}

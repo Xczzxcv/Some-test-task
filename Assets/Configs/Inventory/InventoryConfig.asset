@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: InventoryConfig
   m_EditorClassIdentifier: 
   Size: 30
+  InitiallyUnlockedSlotsAmount: 15
+  UnlockPrice: 333

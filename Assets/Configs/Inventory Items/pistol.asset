@@ -16,4 +16,5 @@ MonoBehaviour:
   Weight: 1
   MaxStackAmount: 5
   DamageAmount: 10
+  BulletsPerShot: 1
   ProjectileItemConfig: {fileID: 11400000, guid: 7e8405247a9d24a42b453d578581d402, type: 2}

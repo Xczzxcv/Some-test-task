@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69903b97429f4b359bc84d9a3f147971, type: 3}
-  m_Name: ammo1
+  m_Script: {fileID: 11500000, guid: eb765137c5d54f369535c1c9e75767ae, type: 3}
+  m_Name: jacket
   m_EditorClassIdentifier: 
-  Id: ammo1
-  Weight: 0.01
-  MaxStackAmount: 30
-  ConsumableType: 1
+  Id: jacket
+  Weight: 1
+  MaxStackAmount: 5
+  BodyPart: 2
+  ArmorAmount: 3

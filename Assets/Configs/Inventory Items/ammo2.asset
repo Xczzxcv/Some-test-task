@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69903b97429f4b359bc84d9a3f147971, type: 3}
-  m_Name: ammo1
+  m_Name: ammo2
   m_EditorClassIdentifier: 
-  Id: ammo1
+  Id: ammo2
   Weight: 0.01
   MaxStackAmount: 30
   ConsumableType: 1

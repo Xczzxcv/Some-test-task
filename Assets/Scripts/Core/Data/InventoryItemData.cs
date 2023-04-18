@@ -12,5 +12,11 @@ internal abstract class InventoryItemData : ITypedGameData, IGameDataPiece
     public string ItemId;
     [JsonProperty("amount")]
     public int Amount;
+
+    protected InventoryItemData(string itemId, int amount)
+    {
+        ItemId = itemId;
+        Amount = amount;
+    }
 }
 }

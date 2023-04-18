@@ -2,6 +2,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+namespace Ui
+{
 internal class FlexibleGridLayout : LayoutGroup
 {
     [SerializeField] private GridFitType fitType;
@@ -155,7 +157,6 @@ internal class FlexibleGridLayout : LayoutGroup
         cellWidth = desiredCellWidth;
         cellHeight = calculatedCellHeight;
         return true;
-
     }
 
     private void UpdateChildren(Vector2 currentCellSize)
@@ -187,4 +188,5 @@ internal class FlexibleGridLayout : LayoutGroup
 
     public override void SetLayoutVertical()
     { }
+}
 }

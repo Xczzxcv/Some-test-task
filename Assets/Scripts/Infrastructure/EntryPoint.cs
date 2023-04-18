@@ -2,28 +2,30 @@ using Core.Configs;
 using Core.Data;
 using Core.Data.Handlers;
 using Core.Models;
-using Infrastructure;
 using UnityEngine;
 using Zenject;
 
+namespace Infrastructure
+{
 internal class EntryPoint : MonoBehaviour
 {
     [SerializeField] private GameQuitManager gameQuitManager;
+    [SerializeField] private UiFactory uiFactory;
     
     private ISaveDataHandler _saveDataHandler;
     private IGameDataInitializer _gameDataInitializer;
-    private IInventoryItemFactory _inventoryItemFactory;
+    private IInventoryItemsFactory _inventoryItemsFactory;
     private IConfigsProvider _configsProvider;
 
     [Inject]
     private void Construct(ISaveDataHandler saveDataHandler, 
         IGameDataInitializer gameDataInitializer,
-        IInventoryItemFactory inventoryItemFactory,
+        IInventoryItemsFactory inventoryItemsFactory,
         IConfigsProvider configsProvider)
     {
         _saveDataHandler = saveDataHandler;
         _gameDataInitializer = gameDataInitializer;
-        _inventoryItemFactory = inventoryItemFactory;
+        _inventoryItemsFactory = inventoryItemsFactory;
         _configsProvider = configsProvider;
     }
 
@@ -33,20 +35,20 @@ internal class EntryPoint : MonoBehaviour
         gameDataManager.LoadData();
         
         gameQuitManager.Init(gameDataManager);
-
-        TestSomething(gameDataManager);
+        
+        var inventory = GetTestInventory(gameDataManager);
+        var mainScreenController = uiFactory.CreateMainScreenController();
+        mainScreenController.Setup(inventory);
     }
 
-    private void TestSomething(IGameDataProvider<InventoryData> inventoryDataProvider)
+    private IInventory GetTestInventory(IGameDataProvider<InventoryData> inventoryDataProvider)
     {
         var inventoryConfig = _configsProvider.Inventory;
         var inventoryData = inventoryDataProvider.GetData();
-        IInventory inventory = new Inventory(inventoryConfig, inventoryData, _inventoryItemFactory);
+        IInventory inventory = new Inventory(inventoryConfig, inventoryData, _inventoryItemsFactory);
         inventory.Init();
-        for (var i = 0; i < inventory.Slots.Count; i++)
-        {
-            var inventorySlot = inventory.Slots[i];
-            Debug.Log($"{i}: {inventorySlot.Item}");
-        }
+
+        return inventory;
     }
+}
 }

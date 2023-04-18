@@ -1,3 +1,4 @@
+using System;
 using JetBrains.Annotations;
 
 namespace Core.Models
@@ -5,13 +6,15 @@ namespace Core.Models
 internal interface IInventorySlot
 {
     [CanBeNull] IInventoryItem Item { get; }
-
+    int SlotIndex { get; }
+    bool IsActive { get; }
+    event Action SlotUpdated;
+    
     void Init();
-    
-    bool CanPutInto(IInventoryItem item);
-
-    bool TryPutInto(IInventoryItem item);
-    
+    int CanPutIntoAmount(IInventoryItem item);
+    int TryPutItem(IInventoryItem item);
+    bool TryTakeAway(int amount, out IInventoryItem item);
     bool TryTakeAway(out IInventoryItem item);
+    void SetActive(bool active);
 }
 }

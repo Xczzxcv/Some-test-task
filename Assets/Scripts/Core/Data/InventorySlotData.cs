@@ -9,5 +9,7 @@ internal class InventorySlotData : IGameDataPiece
 {
     [JsonProperty("item")]
     [CanBeNull] public InventoryItemData Item;
+    [JsonProperty("is_active")]
+    public bool IsActive = true;
 }
 }

@@ -6,5 +6,7 @@ namespace Core.Configs
 internal class InventoryConfig : ScriptableObject, IGameConfig
 {
     public int Size;
+    public int InitiallyUnlockedSlotsAmount;
+    public float UnlockPrice;
 }
 }

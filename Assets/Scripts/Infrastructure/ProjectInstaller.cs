@@ -22,7 +22,7 @@ internal class ProjectInstaller : MonoInstaller
 
     private void BindItemsFactory()
     {
-        Container.Bind<IInventoryItemFactory>().To<InventoryItemFactory>().AsSingle();
+        Container.Bind<IInventoryItemsFactory>().To<InventoryItemsFactory>().AsSingle();
     }
 }
 }
